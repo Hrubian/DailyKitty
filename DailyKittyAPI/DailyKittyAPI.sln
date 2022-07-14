@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyKittyAPI", "DailyKittyAPI\DailyKittyAPI.csproj", "{C862D291-B62F-4F82-8BA8-D9A9D3175F54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C862D291-B62F-4F82-8BA8-D9A9D3175F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C862D291-B62F-4F82-8BA8-D9A9D3175F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C862D291-B62F-4F82-8BA8-D9A9D3175F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C862D291-B62F-4F82-8BA8-D9A9D3175F54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39071970-8B79-4A3E-B98C-88F89AC673C9}
+	EndGlobalSection
+EndGlobal

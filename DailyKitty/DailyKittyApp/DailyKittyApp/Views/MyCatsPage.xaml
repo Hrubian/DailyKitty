@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:DailyKittyApp.ViewModels"
+             x:Class="DailyKittyApp.Views.MyCatsPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:MyCatsViewModel/>
+    </ContentPage.BindingContext>    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <CarouselView x:Name="Cats" ItemsSource="{Binding CatCollection}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <FlexLayout AlignItems="Center" Direction="Column">
+                                <Label Text="{Binding Name}" TextTransform="Uppercase"/>
+                                <Label Text="{Binding Description}" />
+                                <Button Text="Visit" Command="{Binding Path=BindingContext.GoToCatCommand, Source={x:Reference Cats}}" CommandParameter="{Binding .}"/>
+                            </FlexLayout>
+                        </ContentView>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
